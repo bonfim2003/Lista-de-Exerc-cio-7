@@ -1,0 +1,43 @@
+public  class  ExceptionGenerica {
+
+public  static  void  main ( String [] args ) {
+		
+		int [] numeros = { 4 , 8 , 16 , 32 , 64 , 128 };
+		demônio int [] = { 2 , 0 , 4 , 8 , 0 };
+		
+		para ( int i = 0 ; i < numeros . comprimento; i ++ ) {
+			
+			tente {
+				Sistema . para fora . println (numeros [i] +  " / "  + demônio [i] +  " = "  + (numeros [i] / demônio [i]));
+			}
+			catch ( exceção e) {
+				Sistema . para fora . println (e . getMessage ());
+				e . printStackTrace ();
+			}
+		}
+		
+	}
+}
+import  java.util.Scanner ;
+
+public  class  UsandoThrows {
+
+	public  static  void  main ( String [] args ) {
+		
+		Sistema . para fora . println ( " Entre com um número decimal " );
+		tente {
+			duplo núm = leNumero ();
+			Sistema . para fora . println ( " Você digitou "  + num);
+		} catch ( exceção e) {
+			Sistema . para fora . println ( " Entrada inválida " );
+			e . printStackTrace ();
+		}
+
+	}
+
+	public  static  double  leNumero () lança  Exception {
+		Varredura do scanner =  novo  scanner ( sistema . In);
+		double num = scan . nextDouble ();
+		return num;
+	}
+}
