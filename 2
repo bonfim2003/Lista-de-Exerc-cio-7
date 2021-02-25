@@ -1,0 +1,22 @@
+public  class  MultiplosCatch {
+
+	public  static  void  main ( String [] args ) {
+
+		int [] numeros = { 4 , 8 , 16 , 32 , 64 , 128 };
+		demônio int [] = { 2 , 0 , 4 , 8 , 0 };
+
+		para ( int i = 0 ; i < numeros . comprimento; i ++ ) {
+			tente {
+				Sistema . para fora . println (numeros [i] +  " / "  + demônio [i] +  " = "  + (numeros [i] / demônio [i]));
+			}
+			catch ( ArithmeticException e) {
+				Sistema . para fora . println ( " Erro ao dividir por zero " );
+			}
+			catch ( ArrayIndexOutOfBoundsException e) {
+				Sistema . para fora . println ( " Posição do array inválida " );
+			}
+		}
+
+	}
+
+}
